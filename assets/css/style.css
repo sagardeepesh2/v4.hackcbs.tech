@@ -370,25 +370,27 @@ a {
   font-size: 20px;
 }
 .cpf {
-  padding: 40px;
-  align-content: center;
-  text-align: center;
-  justify-content: center;
+    padding: 40px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
 }
 .cpf-card {
-  margin: 10px;
-  padding: 40px;
-  /*background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);*/
-  background: #2bc0e4;
-  background: -webkit-linear-gradient(to bottom, #eaecc6, #2bc0e4);
-  background: linear-gradient(to bottom, #eaecc6, #2bc0e4);
-  /*background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,101,133,1) 0%, rgba(255,211,165,1) 90% );*/
-  /*background: linear-gradient(90deg, #E9828E 49px, transparent 1%) center, linear-gradient(#E9828E 49px, transparent 1%) center, #ffffff;
+    margin: 10px;
+    padding: 40px;
+    transition: transform .2s;
+    /*background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);*/
+    background: #2BC0E4;
+    background: -webkit-linear-gradient(to bottom, #EAECC6, #2BC0E4);
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    /*background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,101,133,1) 0%, rgba(255,211,165,1) 90% );*/
+    /*background: linear-gradient(90deg, #E9828E 49px, transparent 1%) center, linear-gradient(#E9828E 49px, transparent 1%) center, #ffffff;
     background-size: 50px 50px;*/
-  border-radius: 10px;
+    border-radius: 10px;
 }
 .cpf-card:hover {
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    transform: translate(0, -20px);
 }
 .cpf-card p {
   font-size: 20px;
