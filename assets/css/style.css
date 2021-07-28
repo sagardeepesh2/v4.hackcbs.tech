@@ -382,7 +382,12 @@ a {
     /*background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);*/
     background: #2BC0E4;
     background: -webkit-linear-gradient(to bottom, #EAECC6, #2BC0E4);
-    background: linear-gradient(to right, #43cea2, #185a9d);
+    background: linear-gradient(-45deg,rgba( 255, 255, 255, 0.1 ),rgba(69, 231, 236, 0.4));
+    backdrop-filter: blur(20px);
+  box-shadow: 5px 5px 15px 0 rgba(27, 3, 3, 25%);
+  border-radius: 20px;
+  border-top: 4px solid rgba(157, 233, 247, 0.438);
+  border-bottom: 4px solid rgba(157, 233, 247, 0.438);
     /*background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,101,133,1) 0%, rgba(255,211,165,1) 90% );*/
     /*background: linear-gradient(90deg, #E9828E 49px, transparent 1%) center, linear-gradient(#E9828E 49px, transparent 1%) center, #ffffff;
     background-size: 50px 50px;*/
