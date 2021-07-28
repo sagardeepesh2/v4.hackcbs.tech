@@ -393,6 +393,9 @@ a {
     background-size: 50px 50px;*/
     border-radius: 10px;
 }
+.cpf-card-2 {
+  background: linear-gradient(45deg,rgba( 255, 255, 255, 0.1 ),rgba(69, 231, 236, 0.4));
+}
 .cpf-card:hover {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 5px 10px 0 rgba(0, 0, 0, 0.1);
     transform: translate(0, -20px);
