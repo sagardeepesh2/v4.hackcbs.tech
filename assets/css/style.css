@@ -743,7 +743,7 @@ a {
   }
   .contact-card h5 {
     font-size: 15px;
-    padding: 20px 12px;
+    padding-bottom: 20px;
   }
   .themes-bg-cover {
     background: url("../img/bg1.png");
