@@ -397,38 +397,62 @@ a {
   color: white;
 }
 .contact {
-  padding: 0 50px;
+  padding: 0 30px;
 }
 .contact-card {
-  background-color: #feeceb;
-  border-radius: 15px;
   padding: 40px;
   text-align: center;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
   font-family: Montserrat;
+  position: relative;
+  background: linear-gradient(-45deg,rgba( 255, 255, 255, 0.1 ),rgba(69, 231, 236, 0.4));
+  backdrop-filter: blur(20px);
+  box-shadow: 5px 5px 15px 0 rgba(27, 3, 3, 25%);
+  border-radius: 20px;
+  border-top: 4px solid rgba(157, 233, 247, 0.438);
+  border-bottom: 4px solid rgba(157, 233, 247, 0.438);
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.contact-card:hover {
+  box-shadow: 0 0 35px 0 rgba(27, 3, 3, 25%);
+}
+.contact-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(157, 233, 247, 0.438), transparent);
+  transform: skew(-18deg);
+  transition: 0.5s;
+  z-index: -2;
+}
+.contact-card:hover::before {
+  transform: translateX(100%);
 }
 .contact-card span {
-  background-color: #fb5858;
+  background-color: #1D3657;
   color: #ffffff;
   padding: 8px 12px;
   font-size: 40px;
   border-radius: 20px;
 }
 .contact-card h3 {
-  font-size: 40px;
-  font-weight: 1000;
+  font-size: 30px;
+  margin : 10px;
+  padding: 20px;
+  padding-bottom: 35px;
 }
 .contact-card h4 {
-  font-family: roboto;
-  margin-top: 25px;
-  font-size: 25px;
+  margin-top: 20px;
+  font-size: 20px;
 }
 .contact-card h5 {
-  font-size: 25px;
+  font-size: 20px;
 }
-.contact-content {
-  margin-top: 40px;
-}
+
 .themes-bg {
   background-color: rgba(21, 41, 54, 1);
   background-size: cover;
@@ -670,24 +694,56 @@ a {
     padding: 0 30px;
   }
   .contact-card {
-    background-color: #ebe6db;
-    border-radius: 15px;
-    padding: 30px;
+    padding: 40px;
     text-align: center;
-  }
-  .contact-card span {
-    padding: 6px 9px;
-    font-size: 30px;
+    font-family: Montserrat;
+    position: relative;
+    background: linear-gradient(-45deg,rgba( 255, 255, 255, 0.1 ),rgba(69, 231, 236, 0.4));
+    backdrop-filter: blur(20px);
+    box-shadow: 5px 5px 15px 0 rgba(27, 3, 3, 25%);
+    border-radius: 20px;
+    border-top: 4px solid rgba(157, 233, 247, 0.438);
+    border-bottom: 4px solid rgba(157, 233, 247, 0.438);
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.contact-card:hover {
+    box-shadow: 0 0 35px 0 rgba(27, 3, 3, 25%);
+}
+.contact-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(157, 233, 247, 0.438), transparent);
+    transform: skew(-18deg);
+    transition: 0.5s;
+    z-index: -2;
+}
+.contact-card:hover::before {
+    transform: translateX(100%);
+}
+.contact-card span {
+    background-color: #1D3657;
+    color: #ffffff;
+    padding: 8px 12px;
+    font-size: 40px;
+    border-radius: 20px;
   }
   .contact-card h3 {
-    font-size: 30px;
+    font-size: 25px;
+    padding: 20px;
   }
   .contact-card h4 {
     margin-top: 20px;
     font-size: 20px;
   }
   .contact-card h5 {
-    font-size: 20px;
+    font-size: 15px;
+    padding: 20px 12px;
   }
   .themes-bg-cover {
     background: url("../img/bg1.png");
