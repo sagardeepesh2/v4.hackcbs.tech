@@ -295,6 +295,58 @@ a {
   font-family: Montserrat;
   opacity: 80%;
 }
+
+/* new added */
+.speaker-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.container .speaker-card .speaker-links {
+  position: absolute;
+  bottom: -105px;
+  width: 87%;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  backdrop-filter: blur(15px);
+  flex-direction: column;
+  /* box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1); */
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
+  transition: bottom 0.5s;
+}
+
+.container .speaker-card:hover .speaker-links {
+  bottom: 0px;
+}
+
+.container .speaker-card .speaker-links .spklinks {
+  position: relative;
+  display: flex;
+  padding: 0;
+}
+
+.container .speaker-card .speaker-links .spklinks li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+  transition-delay: calc(0.2s*var(--i));
+}
+
+.container .speaker-card:hover .speaker-links .spklinks li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.container .speaker-card .speaker-links .spklinks li a {
+  color: #000;
+  font-size: 24px;
+}
+
 .lgx-gallery-single figure:hover {
   cursor: pointer;
 }
@@ -817,6 +869,9 @@ a {
   }
   .speaker-card h4 {
     font-size: 1.2rem;
+  }
+  .container .speaker-card .speaker-links{
+    width: 95%;
   }
   .timer {
     padding: 20px;
