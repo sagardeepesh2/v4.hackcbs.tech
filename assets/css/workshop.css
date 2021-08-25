@@ -1,99 +1,104 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-}
-.btn {
-  background-color: white;
-  border: 1px solid #ccc;
-  color: #696969;
-  padding: 0.5rem;
-  text-transform: lowercase;
-}
-.btn--block {
-  display: block;
-  width: 100%;
-}
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.cards__item {
-  display: flex;
-  padding: 1rem;
-}
-@media (min-width: 40rem) {
-  .cards__item {
-    width: 50%;
+    * {
+    box-sizing: border-box;
   }
-}
-@media (min-width: 56rem) {
-  .cards__item {
-    width: 33.3333%;
+  
+  .workshops {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
   }
-}
-.card {
-  background-color: white;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  margin-top: 10px;
-}
-.card:hover .card__image {
-  -webkit-filter: contrast(100%);
-  filter: contrast(100%);
-}
-.card__content {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  padding: 1rem;
-}
-.card__image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  -webkit-filter: contrast(70%);
-  filter: contrast(100%);
-  overflow: hidden;
-  position: relative;
-  transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91),
-    -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-}
-.card__image::before {
-  content: "";
-  display: block;
-  padding-top: 56.25%;
-}
-@media (min-width: 40rem) {
-  .card__image::before {
-    padding-top: 66.6%;
+  
+  .workshop {
+    position: relative;
+    display: block;
+    height: 100%;  
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
   }
-}
-.card__title {
-  color: #696969;
-  font-size: 1.25rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.card__text {
-  flex: 1 1 auto;
-  font-size: 1.3rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
-}
+  
+  .workshop__image {      
+    width: 100%;
+    height: auto;
+  }
+  
+  .workshop__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: 20px;    
+    background-color: white;      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .workshop:hover .workshop__overlay {
+    transform: translateY(0);
+  }
+  
+  .workshop__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: 20px 0 0 0;    
+    background-color: white;
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .workshop__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .workshop__arc path {
+    fill: white; 
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }       
+  
+  .workshop:hover .workshop__header {
+    transform: translateY(0);
+  }
+  
+  .workshop__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .workshop__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #152836;
+    font-family: "Montserrat", sans-serif;
+    line-height: normal;
+  }  
+  .workshop__status {
+    font-size: .8em;
+    color: #218bab;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .workshop__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }    
