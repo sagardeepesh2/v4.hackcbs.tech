@@ -449,7 +449,7 @@
     <!--Workshop (Saijal)-->
     <section id="workshops">
         <div class=container>
-            <div class="section_title">
+            <div class="section_title pt100">
                 <h3 class=title data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
                     Our Workshops</h3>
             </div>
@@ -468,10 +468,27 @@
                             <h5 class="workshop__status">Persons name <i class="fab fa-linkedin"></i></h5> 
                             <h6 class=""><i class="fab fa-youtube" style="color: red;"></i> 11th Nov | 3:00 PM IST</h6>
                         </div>
+                        
                       </div>
                       <p class="workshop__description">GSoC Mentor, MLH Fellowship,Founder @ Code for Cause</p>
+                      <div class="workshop__description">
+                        <button class="btn-sm btn-info" data-toggle="modal" data-target="#workshop1">Read More</button>
+                        <a href="https://www.youtube.com/watch?v=Mt0Aj0AHrXo" target="_blank"><button class="btn-sm btn-danger">Watch Now!</button></a>
+                      </div>
                     </div>
-                  </div>      
+                  </div>  
+                  <div id="workshop1" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body"> <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <center> <br> <img src="assets/img/themes/postgresql.jpg" width="70%"> <br></center> <br>
+                                <h5 class="modal-title">PostgreSQL</h5> <br>
+                                <p>This session would cover in detail how a PostgreSQL (v10) database can be scaled to support a monthly inflow of 10+ Million data points and serve it over a REST API with an average response time under ~90ms. A bit of
+                                    background in backend development will be excellent (not specifically in PostgreSQL) but not necessary, also, it is advised you learn how indexing works or just how a database works internally.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
                 </li>
                 <li>
                     <div class="workshop">
