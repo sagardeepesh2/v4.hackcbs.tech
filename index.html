@@ -17,6 +17,7 @@
     <link rel=stylesheet href="assets/libs/bootstrap/css/bootstrap.min.css" media=all />
     <link rel=stylesheet href="assets/libs/fontawesome/css/font-awesome.min.css" media=all />
     <link id=lgx-master-style rel=stylesheet href="assets/css/style-default.min.css" media=all />
+    <link rel="stylesheet" href="./assets/css/workshop.css">
     <style type="text/css">
         #loading {
             position: fixed;
@@ -75,8 +76,8 @@
                                     </li>
                                     <li><a class=lgx-scroll href="#glimpses">Glimpses</a>
                                     </li>
-                                    <!-- <li><a class=lgx-scroll href="#workshops">Workshops</a>
-                                    </li> -->
+                                    <li><a class=lgx-scroll href="#workshops">Workshops</a>
+                                    </li>
                                     <li><a class=lgx-scroll href="#speakers">Speakers</a>
                                     </li>
                                     <!-- <li><a class=lgx-scroll href="#themes">Themes</a>
@@ -114,7 +115,8 @@
                                     <div class="lgx-banner-info lgx-banner-info-center">
                                         <h2 class=title><i>hack</i>CBS <span><b>4</b>.<b>0</b></span></h2>
                                         <h3 class="quote text-uppercase">Learn <span>.</span> Teach <span>.</span> Hack
-                                            <span>.</span> Win</h3>
+                                            <span>.</span> Win
+                                        </h3>
                                         <!-- <br> <span class="date"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 6th - 8th November, 2020</span> -->
                                         <br>
                                         <div class="row home-button">
@@ -445,43 +447,147 @@
             </div>
         </div>
     </section>
-
-    <!-- Speaker/Mentor apply (Manan) -->
-    <section class="pb100">
-            <div class="container">
-                <div class="row">
-                    <div class="cpf">
-                        <div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
-                            <div class="cpf-card">
-                                <img src="assets/img/icons/speaker.png" width="50%" loading=lazy>
-                                <br>
-                                <h3>APPLY TO BE A SPEAKER</h3>
-                                <p>Are you interested in taking a keynote session - a short talk, discussion, webinar, or workshop in hackCBS 3.0?</p>
-                                <br>
-                                <a class="typeform-share link" href="https://form.typeform.com/to/lM4Rfs" data-mode="popup" data-hide-headers=true data-hide-footer=true data-submit-close-delay="1" target="_blank">
-                                    <button style="margin: 10px;" class="text-uppercase btn-primary btn-md"><b>Apply</b>
-                                    </button>
-                                </a>
+    <!--Workshop (Saijal)-->
+    <section id="workshops">
+        <div class=container>
+            <div class="section_title pt100">
+                <h3 class=title data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+                    Our Workshops</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="workshops pb100">
+                <li>
+                  <div class="workshop">
+                    <img src="https://images.pexels.com/photos/3568521/pexels-photo-3568521.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="workshop__image" alt="" />
+                    <div class="workshop__overlay">
+                      <div class="workshop__header">
+                        <svg class="workshop__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                        <img class="workshop__thumb" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+                        <div class="workshop__header-text">
+                            <h3 class="workshop__title">Workshop Topic</h3>       
+                            <h5 class="workshop__status">Persons name <i class="fab fa-linkedin"></i></h5> 
+                            <h6 class=""><i class="fab fa-youtube" style="color: red;"></i> 11th Nov | 3:00 PM IST</h6>
+                        </div>
+                        
+                      </div>
+                      <p class="workshop__description">GSoC Mentor, MLH Fellowship,Founder @ Code for Cause</p>
+                      <div class="workshop__description">
+                        <button class="btn-sm btn-info" data-toggle="modal" data-target="#workshop1">Read More</button>
+                        <a href="https://www.youtube.com/watch?v=Mt0Aj0AHrXo" target="_blank"><button class="btn-sm btn-danger">Watch Now!</button></a>
+                      </div>
+                    </div>
+                  </div>  
+                  <div id="workshop1" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body"> <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <center> <br> <img src="assets/img/themes/postgresql.jpg" width="70%"> <br></center> <br>
+                                <h5 class="modal-title">PostgreSQL</h5> <br>
+                                <p>This session would cover in detail how a PostgreSQL (v10) database can be scaled to support a monthly inflow of 10+ Million data points and serve it over a REST API with an average response time under ~90ms. A bit of
+                                    background in backend development will be excellent (not specifically in PostgreSQL) but not necessary, also, it is advised you learn how indexing works or just how a database works internally.</p>
                             </div>
                         </div>
-                        <div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
-                            <div class="cpf-card" style="background: linear-gradient(to right, #00d2ff, #928dab) !important;">
-                                <img src="assets/img/icons/mentor.png" width="50%" loading=lazy>
-                                <br>
-                                <h3>APPLY TO BE A MENTOR/JUDGE</h3>
-                                <p>Do you want to mentor hackers or judge some amazing projects in India's Largest student-run Hackathon?</p>
-                                <br>
-                                <a class="typeform-share link" href="https://form.typeform.com/to/U7EFzs1K" data-mode="popup" data-hide-headers=true data-hide-footer=true data-submit-close-delay="1" target="_blank">
-                                    <button style="margin: 10px;" class="text-uppercase btn-primary btn-md"><b>Apply</b>
-                                    </button>
-                                </a>
-                                <br>
-                            </div>
+                    </div>
+                </div>    
+                </li>
+                <li>
+                    <div class="workshop">
+                      <img src="https://images.pexels.com/photos/3568521/pexels-photo-3568521.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="workshop__image" alt="" />
+                      <div class="workshop__overlay">
+                        <div class="workshop__header">
+                          <svg class="workshop__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                          <img class="workshop__thumb" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+                          <div class="workshop__header-text">
+                            <h3 class="workshop__title">Workshop Topic if long or very long</h3>            
+                            <span class="workshop__status">Persons name is this</span>
+                          </div>
+                        </div>
+                        <p class="workshop__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                      </div>
+                    </div>      
+                  </li>
+                  <li>
+                    <div class="workshop">
+                      <img src="https://images.pexels.com/photos/3568521/pexels-photo-3568521.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="workshop__image" alt="" />
+                      <div class="workshop__overlay">
+                        <div class="workshop__header">
+                          <svg class="workshop__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                          <img class="workshop__thumb" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+                          <div class="workshop__header-text">
+                            <h3 class="workshop__title">Workshop Topic</h3>            
+                            <span class="workshop__status">Persons name</span>
+                          </div>
+                        </div>
+                        <p class="workshop__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                      </div>
+                    </div>      
+                  </li>
+                  <li>
+                    <div class="workshop">
+                      <img src="https://images.pexels.com/photos/3568521/pexels-photo-3568521.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="workshop__image" alt="" />
+                      <div class="workshop__overlay">
+                        <div class="workshop__header">
+                          <svg class="workshop__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                          <img class="workshop__thumb" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+                          <div class="workshop__header-text">
+                            <h3 class="workshop__title">Workshop Topic</h3>            
+                            <span class="workshop__status">Persons name</span>
+                          </div>
+                        </div>
+                        <p class="workshop__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                      </div>
+                    </div>      
+                  </li>
+            </div>
+        </div>
+        
+    </section>
+    
+    <!-- Speaker/Mentor apply (Manan) -->
+    <section class="pb100">
+        <div class="container">
+            <div class="row">
+                <div class="cpf">
+                    <div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="1000"
+                        data-aos-anchor-placement="top-bottom">
+                        <div class="cpf-card">
+                            <img src="assets/img/icons/speaker.png" width="50%" loading=lazy>
+                            <br>
+                            <h3>APPLY TO BE A SPEAKER</h3>
+                            <p style="color: black;">Are you interested in taking a keynote session - a short talk,
+                                discussion, webinar, or workshop in hackCBS 4.0?</p>
+                            <br>
+                            <a class="typeform-share link" href="https://form.typeform.com/to/lM4Rfs" data-mode="popup"
+                                data-hide-headers=true data-hide-footer=true data-submit-close-delay="1"
+                                target="_blank">
+                                <button style="margin: 10px;" class="text-uppercase btn-primary btn-md"><b>Apply</b>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="1000"
+                        data-aos-anchor-placement="top-bottom">
+                        <div class="cpf-card cpf-card-2">
+                            <img src="assets/img/icons/mentor.png" width="50%" loading=lazy>
+                            <br>
+                            <h3>APPLY TO BE A MENTOR/JUDGE</h3>
+                            <p style="color: black;">Do you want to mentor hackers or judge some amazing projects in
+                                India's Largest student-run Hackathon?</p>
+                            <br>
+                            <a class="typeform-share link" href="https://form.typeform.com/to/U7EFzs1K"
+                                data-mode="popup" data-hide-headers=true data-hide-footer=true
+                                data-submit-close-delay="1" target="_blank">
+                                <button style="margin: 10px;" class="text-uppercase btn-primary btn-md"><b>Apply</b>
+                                </button>
+                            </a>
+                            <br>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> 
+        </div>
+    </section>
     <!-- <section class="pb100">
         <div class="container">
             <div class="row">
@@ -547,6 +653,19 @@
                                 <h4>Senior Developer Advocate<br>for TensorFlow.js</h4>
                                 <img src="assets/img/speakers/google.png" width="28%" loading=lazy>
                             </div>
+
+                            <div class="speaker-links">
+                                <div class="linkBx">
+                                    <ul class="spklinks">
+                                        <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:2;"><a href="#"><i class="fab fa-instagram"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:3;"><a href="#"><i class="fab fa-linkedin-in"
+                                                    aria-hidden=true></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-xl-4 col-sm-6 col-xs-6 col-md-4" style="padding: 0px;" data-aos="fade-up"
@@ -559,6 +678,19 @@
                                 <h3>Aravind Putrevu</h3>
                                 <h4>Senior Developer Advocate</h4>
                                 <img src="assets/img/speakers/elastic.svg" width="35%">
+                            </div>
+
+                            <div class="speaker-links">
+                                <div class="linkBx">
+                                    <ul class="spklinks">
+                                        <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:2;"><a href="#"><i class="fab fa-instagram"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:3;"><a href="#"><i class="fab fa-linkedin-in"
+                                                    aria-hidden=true></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -573,6 +705,19 @@
                                 <h4>Chief Evangelist</h4>
                                 <img src="assets/img/speakers/Postman.svg" width="38%">
                             </div>
+
+                            <div class="speaker-links">
+                                <div class="linkBx">
+                                    <ul class="spklinks">
+                                        <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:2;"><a href="#"><i class="fab fa-instagram"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:3;"><a href="#"><i class="fab fa-linkedin-in"
+                                                    aria-hidden=true></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-xl-4 col-sm-6 col-xs-6 col-md-4" style="padding: 0px;" data-aos="fade-up"
@@ -585,6 +730,19 @@
                                 <h3>Dmitry Shklovsky</h3>
                                 <h4>Co-Founder</h4>
                                 <img src="assets/img/sponsors/quiknode-min.png" width="35%">
+                            </div>
+
+                            <div class="speaker-links">
+                                <div class="linkBx">
+                                    <ul class="spklinks">
+                                        <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:2;"><a href="#"><i class="fab fa-instagram"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:3;"><a href="#"><i class="fab fa-linkedin-in"
+                                                    aria-hidden=true></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -599,6 +757,19 @@
                                 <h4>Founder</h4>
                                 <img src="assets/img/speakers/geeksforgeeks.jpeg" width="50%">
                             </div>
+
+                            <div class="speaker-links">
+                                <div class="linkBx">
+                                    <ul class="spklinks">
+                                        <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:2;"><a href="#"><i class="fab fa-instagram"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:3;"><a href="#"><i class="fab fa-linkedin-in"
+                                                    aria-hidden=true></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-xl-4 col-sm-6 col-xs-6 col-md-4" style="padding: 0px;" data-aos="fade-up"
@@ -611,6 +782,19 @@
                                 <h3>Sahil Sen</h3>
                                 <h4>Developer Evangelist</h4>
                                 <img src="assets/img/sponsors/quiknode-min.png" width="35%">
+                            </div>
+
+                            <div class="speaker-links">
+                                <div class="linkBx">
+                                    <ul class="spklinks">
+                                        <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:2;"><a href="#"><i class="fab fa-instagram"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:3;"><a href="#"><i class="fab fa-linkedin-in"
+                                                    aria-hidden=true></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -625,6 +809,19 @@
                                 <h4>Senior Developer Advocate</h4>
                                 <img src="assets/img/speakers/digitalocean.png" width="45%">
                             </div>
+
+                            <div class="speaker-links">
+                                <div class="linkBx">
+                                    <ul class="spklinks">
+                                        <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:2;"><a href="#"><i class="fab fa-instagram"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:3;"><a href="#"><i class="fab fa-linkedin-in"
+                                                    aria-hidden=true></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-xl-4 col-sm-6 col-xs-6 col-md-4" style="padding: 0px;" data-aos="fade-up"
@@ -637,6 +834,19 @@
                                 <h3>Rajat Jain</h3>
                                 <h4>Software Engineer II</h4>
                                 <img src="assets/img/sponsors/microsoft-min.png" width="35%">
+                            </div>
+
+                            <div class="speaker-links">
+                                <div class="linkBx">
+                                    <ul class="spklinks">
+                                        <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:2;"><a href="#"><i class="fab fa-instagram"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:3;"><a href="#"><i class="fab fa-linkedin-in"
+                                                    aria-hidden=true></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -651,6 +861,19 @@
                                 <h4>GSoC Mentor, MLH Fellowship,<br>Founder</h4>
                                 <img src="assets/img/speakers/code-for-cause.svg" width="70%" style="margin-left: 30px">
                             </div>
+
+                            <div class="speaker-links">
+                                <div class="linkBx">
+                                    <ul class="spklinks">
+                                        <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:2;"><a href="#"><i class="fab fa-instagram"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:3;"><a href="#"><i class="fab fa-linkedin-in"
+                                                    aria-hidden=true></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-xl-4 col-sm-6 col-xs-6 col-md-4" style="padding: 0px;" data-aos="fade-up"
@@ -662,6 +885,19 @@
                             <div class="speaker-content">
                                 <h3>Gurtej Singh</h3>
                                 <h4>Program & Growth Manager <br>Board Infinity</h4>
+                            </div>
+
+                            <div class="speaker-links">
+                                <div class="linkBx">
+                                    <ul class="spklinks">
+                                        <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:2;"><a href="#"><i class="fab fa-instagram"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:3;"><a href="#"><i class="fab fa-linkedin-in"
+                                                    aria-hidden=true></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -675,6 +911,19 @@
                                 <h3>Gagandeep Reehal</h3>
                                 <h4>Founder, CEO & CTO <br>Minus Zero</h4>
                             </div>
+
+                            <div class="speaker-links">
+                                <div class="linkBx">
+                                    <ul class="spklinks">
+                                        <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:2;"><a href="#"><i class="fab fa-instagram"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:3;"><a href="#"><i class="fab fa-linkedin-in"
+                                                    aria-hidden=true></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-xl-4 col-sm-6 col-xs-6 col-md-4" style="padding: 0px;" data-aos="fade-up"
@@ -686,6 +935,19 @@
                             <div class="speaker-content">
                                 <h3>Sambhav Jain</h3>
                                 <h4>Software Engineer<br>XENCOV</h4>
+                            </div>
+
+                            <div class="speaker-links">
+                                <div class="linkBx">
+                                    <ul class="spklinks">
+                                        <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:2;"><a href="#"><i class="fab fa-instagram"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:3;"><a href="#"><i class="fab fa-linkedin-in"
+                                                    aria-hidden=true></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -699,6 +961,19 @@
                                 <h3>Shivay Lamba</h3>
                                 <h4>Head of Product<br>Metvy</h4>
                             </div>
+
+                            <div class="speaker-links">
+                                <div class="linkBx">
+                                    <ul class="spklinks">
+                                        <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:2;"><a href="#"><i class="fab fa-instagram"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:3;"><a href="#"><i class="fab fa-linkedin-in"
+                                                    aria-hidden=true></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-xl-4 col-sm-6 col-xs-6 col-md-4" style="padding: 0px;" data-aos="fade-up"
@@ -711,6 +986,19 @@
                                 <h3>Arsh Goyal</h3>
                                 <h4>SDE Intern at Samsung &<br>SWE Intern at ISRO</h4>
                             </div>
+
+                            <div class="speaker-links">
+                                <div class="linkBx">
+                                    <ul class="spklinks">
+                                        <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:2;"><a href="#"><i class="fab fa-instagram"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:3;"><a href="#"><i class="fab fa-linkedin-in"
+                                                    aria-hidden=true></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-xl-4 col-sm-6 col-xs-6 col-md-4" style="padding: 0px;" data-aos="fade-up"
@@ -722,6 +1010,19 @@
                             <div class="speaker-content">
                                 <h3>Angeline Chen</h3>
                                 <h4>AWS Educate Student<br>Ambassador</h4>
+                            </div>
+
+                            <div class="speaker-links">
+                                <div class="linkBx">
+                                    <ul class="spklinks">
+                                        <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:2;"><a href="#"><i class="fab fa-instagram"
+                                                    aria-hidden=true></i></a></li>
+                                        <li style="--i:3;"><a href="#"><i class="fab fa-linkedin-in"
+                                                    aria-hidden=true></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2677,22 +2978,23 @@
                                 <div class="col-md-4">
                                     <div class="contact-content"> <span><i class="fas fa-tty"></i></span>
                                         <br>
-                                        <h4>Ayush Chabbra</h4>
-                                        <h5><a href="tel:+91 886 0320 354" style="color: lightskyblue">+91 886 0320 354</a></h5>
+                                        <h4>Ayush Chhabra</h4>
+                                        <h5><a href="tel:+91 886 0320 354" style="color: blue">+91 886 0320 354</a></h5>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="contact-content"> <span><i class="fas fa-envelope-open-text"></i></span>
                                         <br>
                                         <br>
-                                        <h5><a href="mailto:connect@hackcbs.tech" style="color: lightskyblue;">connect@hackcbs.tech</a></h5>
+                                        <h5><a href="mailto:connect@hackcbs.tech"
+                                                style="color: blue;">connect@hackcbs.tech</a></h5>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="contact-content"> <span><i class="fas fa-tty"></i></span>
                                         <br>
                                         <h4>Shubham Dhiman</h4>
-                                        <h5><a href="tel:+91 813 0339 837" style="color: lightskyblue">+91 813 0339 837</a></h5>
+                                        <h5><a href="tel:+91 813 0339 837" style="color: blue">+91 813 0339 837</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -2702,6 +3004,98 @@
             </div>
         </div>
     </section>
+    <!-- <section id="contact" class="pb100 pt100" style="background-image: url(./assets/img/bg1.png);">
+        <div class="container">
+            <div class="row">
+                <div class="contact">
+                    <div class="col-md-6">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12"></div>
+                                <div class="col-md-12">
+                                    <div class="contact-content">
+                                        <h3 style="font-size: 6rem;">CONTACT US</h3>
+                                        <br>
+                                        <h4>We would be happy to help you. Please reach out to us in case of any queries or feedback.</h4>
+                                    </div> 
+                                </div>
+                                <div class="col-md-12"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="contact-card">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="contact-content"> <span><i class="fas fa-phone"></i></span>
+                                        <br>
+                                        <h4>Ayush Chhabra</h4>
+                                        <h5><a href="tel:+91 886 0320 354" style="color: blue">+91 886 0320 354</a></h5>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="contact-content"> <span><i class="fas fa-envelope"></i></span>
+                                        <br>
+                                        <br>
+                                        <h5><a href="mailto:connect@hackcbs.tech" style="color: blue;">connect@hackcbs.tech</a></h5>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="contact-content"> <span><i class="fas fa-phone"></i></span>
+                                        <br>
+                                        <h4>Shubham Dhiman</h4>
+                                        <h5><a href="tel:+91 813 0339 837" style="color: blue">+91 813 0339 837</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section id="contact" class="pb100 pt100" style="background-image: url(./assets/img/bg1.png);">
+        <div class="container">
+            <div class="row">
+                <div class="contact">
+                    <div class="contact-content">
+                        <h3 style="font-size: 6rem;">CONTACT US</h3>
+                        <br>
+                        <h4>We would be happy to help you. Please reach out to us in case of any queries or feedback.</h4>
+                    </div> 
+                        <div class="contact-card">
+                            <div class="row pt20">
+                                <div class="col-md-4">
+                                    <div class="contact-content"> <span><i class="fas fa-phone"></i></span>
+                                        <br>
+                                        <h4>Ayush Chhabra</h4>
+                                        <h5><a href="tel:+91 886 0320 354" style="color: blue">+91 886 0320 354</a></h5>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="contact-content"> <span><i class="fas fa-envelope"></i></span>
+                                        <br>
+                                        <br>
+                                        <h5><a href="mailto:connect@hackcbs.tech" style="color: blue;">connect@hackcbs.tech</a></h5>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="contact-content"> <span><i class="fas fa-phone"></i></span>
+                                        <br>
+                                        <h4>Shubham Dhiman</h4>
+                                        <h5><a href="tel:+91 813 0339 837" style="color: blue">+91 813 0339 837</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>  -->
     <footer>
         <div id=lgx-footer class=lgx-footer>
             <div class=lgx-inner-footer>

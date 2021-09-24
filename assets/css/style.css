@@ -295,6 +295,58 @@ a {
   font-family: Montserrat;
   opacity: 80%;
 }
+
+/* new added */
+.speaker-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.container .speaker-card .speaker-links {
+  position: absolute;
+  bottom: -105px;
+  width: 87%;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  backdrop-filter: blur(15px);
+  flex-direction: column;
+  /* box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1); */
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
+  transition: bottom 0.5s;
+}
+
+.container .speaker-card:hover .speaker-links {
+  bottom: 0px;
+}
+
+.container .speaker-card .speaker-links .spklinks {
+  position: relative;
+  display: flex;
+  padding: 0;
+}
+
+.container .speaker-card .speaker-links .spklinks li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+  transition-delay: calc(0.2s*var(--i));
+}
+
+.container .speaker-card:hover .speaker-links .spklinks li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.container .speaker-card .speaker-links .spklinks li a {
+  color: #000;
+  font-size: 24px;
+}
+
 .lgx-gallery-single figure:hover {
   cursor: pointer;
 }
@@ -382,11 +434,19 @@ a {
     /*background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);*/
     background: #2BC0E4;
     background: -webkit-linear-gradient(to bottom, #EAECC6, #2BC0E4);
-    background: linear-gradient(to right, #43cea2, #185a9d);
+    background: linear-gradient(-45deg,rgba( 255, 255, 255, 0.1 ),rgba(69, 231, 236, 0.4));
+    backdrop-filter: blur(20px);
+  box-shadow: 5px 5px 15px 0 rgba(27, 3, 3, 25%);
+  border-radius: 20px;
+  border-top: 4px solid rgba(157, 233, 247, 0.438);
+  border-bottom: 4px solid rgba(157, 233, 247, 0.438);
     /*background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,101,133,1) 0%, rgba(255,211,165,1) 90% );*/
     /*background: linear-gradient(90deg, #E9828E 49px, transparent 1%) center, linear-gradient(#E9828E 49px, transparent 1%) center, #ffffff;
     background-size: 50px 50px;*/
     border-radius: 10px;
+}
+.cpf-card-2 {
+  background: linear-gradient(45deg,rgba( 255, 255, 255, 0.1 ),rgba(69, 231, 236, 0.4));
 }
 .cpf-card:hover {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 5px 10px 0 rgba(0, 0, 0, 0.1);
@@ -743,7 +803,7 @@ a {
   }
   .contact-card h5 {
     font-size: 15px;
-    padding: 20px 12px;
+    padding-bottom: 20px;
   }
   .themes-bg-cover {
     background: url("../img/bg1.png");
@@ -809,6 +869,9 @@ a {
   }
   .speaker-card h4 {
     font-size: 1.2rem;
+  }
+  .container .speaker-card .speaker-links{
+    width: 95%;
   }
   .timer {
     padding: 20px;
